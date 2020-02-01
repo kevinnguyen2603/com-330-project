@@ -52,9 +52,35 @@ table {
     padding: 1em;
   }
   h1{
+    text-align: center;
     font-size: 2em;
     padding-bottom: 0.5em;
   }
   p{
     padding-bottom: 1em;
+  }
+  .img-circle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    border-radius: 50%;
+    padding-bottom: 1em;
+  }
+  .box{
+    position: relative;
+    border-radius: 2em;
+    background: black;
+    border 1px solid;
+    padding: 2em;
+    line-height: 1.5em;
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+  .box p{
+    color:white;
+    margin-left: 5em;
+    margin-right: 5em;
   }
