@@ -50,11 +50,13 @@ table {
 /*Custom CSS*/
   html{
     padding: 1em;
+    background-color: #E6CEAE;
   }
   h1{
     text-align: center;
     font-size: 2em;
     padding-bottom: 0.5em;
+    color:#807261;
   }
   p{
     padding-bottom: 1em;
@@ -72,7 +74,7 @@ table {
   .box{
     position: relative;
     border-radius: 2em;
-    background: black;
+    background: #BFAB91;
     border 1px solid;
     padding: 2em;
     line-height: 1.5em;
@@ -80,7 +82,7 @@ table {
     margin-right: 15em;
   }
   .box p{
-    color:white;
+    color:#807261;
     margin-left: 5em;
     margin-right: 5em;
   }
