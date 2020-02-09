@@ -16,28 +16,68 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   html{
 		font-family: "Indie Flower",Helvetica, Arial,sans-serif;
 		font-size: 1.125em; /*16px = 1em (target (18px) / context (16px) = result)*/
-		line-height: 1.22222222em; /* 18px * 1.2 = 22*/ /* 22px / 18px = result*/
-    padding: 1.66666667em;
-    background-color: #E6CEAE;
+    padding: 1.22222222em 1.83333333em; /* 33px / 18px = 1.83333333em*/
+    /* background-color: #E6CEAE; */
   }
+	body{
+		line-height: 1.22222222em; /* 18px * 1.2 = 22*/ /* 22px / 18px = result*/
+	}
   h1{
 		font-family: 'Zhi Mang Xing', sans-serif;
-    padding-bottom: 0.5em;
-		font-size: 1.5em;
-		line-height: 1.2em;
+		font-size: 1.953em; /*35.156px /18px = 1.953em*/
+		line-height: 1.563em;
     color:#807261;
   }
+	h1 b{
+		display:block;
+	}
+	h2{
+		font-size: 1.563;
+	}
   h1,h2{
     font-weight: bold;
 		text-align: center;
   }
+	h1, h2, p{
+		padding-bottom: 1.22222222em;
+	}
 	img{
 		position: relative;
 		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
 	}
+	/* Show Gridlines... */
 
+	/**
+	* A quick baseline grid overlay using css+svg.
+	* Inspired by [Basehold.it](https://basehold.it/).
+	* https://gist.github.com/leshido/af24e64ab6627328bfcb7ae0e93a9684
+	* @author leshido
+	*/
+
+	.g body {
+	    position: relative;
+	}
+
+	.g body::after {
+	    /* Change the `height` parameter here to match your base line-height. */
+	    background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(160, 0, 0, 2.0)" /></svg>') repeat top left;
+
+	    content: "";
+	    display: block;
+	    pointer-events: none;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 9999;
+	    position: absolute;
+	}
+
+	.g body:active::after {
+	    display: none;
+	}
   /* .img-circle{
     margin-top: 1.22222222em;
     margin-bottom: 1.22222222em;
