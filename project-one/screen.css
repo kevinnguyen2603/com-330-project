@@ -11,30 +11,42 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 /*Custom CSS*/
+
+
   html{
-		font-family: Helvetica, Arial,sans-serif;
-		font-size: 1.125em; /*16px = 1em (target / context = result)*/
-		line-height: 22px; /* 18px * 1.2 = 22*/
-    padding: 1em;
+		font-family: "Indie Flower",Helvetica, Arial,sans-serif;
+		font-size: 1.125em; /*16px = 1em (target (18px) / context (16px) = result)*/
+		line-height: 1.22222222em; /* 18px * 1.2 = 22*/ /* 22px / 18px = result*/
+    padding: 1.66666667em;
     background-color: #E6CEAE;
   }
   h1{
-    text-align: center;
+		font-family: 'Zhi Mang Xing', sans-serif;
     padding-bottom: 0.5em;
+		font-size: 1.5em;
+		line-height: 1.2em;
     color:#807261;
   }
-  p{
-    padding-bottom: 1em;
+  h1,h2{
+    font-weight: bold;
+		text-align: center;
   }
-  .img-circle{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20em;
+	img{
+		position: relative;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+  /* .img-circle{
+    margin-top: 1.22222222em;
+    margin-bottom: 1.22222222em;
+		padding: 1.22222222em;
+   width: 20em;
     height: 20em;
     overflow: hidden;
     border-radius: 50%;
-    padding-bottom: 1em;
+
   }
   .box{
     position: relative;
@@ -50,4 +62,4 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     color:#807261;
     margin-left: 5em;
     margin-right: 5em;
-  }
+  } */
