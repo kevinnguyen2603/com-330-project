@@ -12,12 +12,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /*Custom CSS*/
   html{
+		font-family: Helvetica, Arial,sans-serif;
+		font-size: 1.125em; /*16px = 1em (target / context = result)*/
+		line-height: 22px; /* 18px * 1.2 = 22*/
     padding: 1em;
     background-color: #E6CEAE;
   }
   h1{
     text-align: center;
-    font-size: 2em;
     padding-bottom: 0.5em;
     color:#807261;
   }
