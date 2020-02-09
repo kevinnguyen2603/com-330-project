@@ -24,8 +24,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	}
   h1{
 		font-family: 'Zhi Mang Xing', sans-serif;
-		font-size: 1.953em; /*35.156px /18px = 1.953em*/
-		line-height: 1.563em;
+		font-size: 1.9531111111em; /*35.156px /18px = 1.953em*/
+		line-height: 1.2515644556em; /* 44 / 35.156 = 1.2515644556 */
+		/* border-bottom: 0.3055555556em solid;/* 5.5px / 18px = 0.3055555556*/
     color:#807261;
   }
 	h1 b{
@@ -42,11 +43,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 		padding-bottom: 1.22222222em;
 	}
 	img{
-		position: relative;
+		display:block;
 		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
 	}
+
+	.photo{
+		background: #333;
+		color: #EEE;
+		padding: 0.6111111111em; /* 11px / 18px = result*/
+		margin-bottom: 1.2222222222em; /* 22px / 18px = result*/
+	}
+
+	.photo figcaption{
+		padding-top: 0.6111111111em; /* 11px / 18px = result*/
+		left: -10000px;
+		position: absolute;
+	}
+
 	/* Show Gridlines... */
 
 	/**
